@@ -1,0 +1,131 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+}
+li {
+  list-style: none;
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  margin-inline: auto;
+  position: relative;
+  max-width: 1440px;
+}
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+.main {
+}
+.logo {
+  cursor: pointer;
+  margin: 56px 58px 0 58px;
+}
+.title {
+  word-break: break-word;
+  margin: 57px 0 0 58px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+.ul-sidebar {
+  margin: 54px 0 54px 54px;
+  padding-left: 0;
+}
+.ul-sidebar li {
+  display: flex;
+  margin-bottom: 30px;
+}
+.ul-sidebar li img {
+  width: 23px;
+}
+.ul-sidebar li a {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 15.7099px;
+  line-height: 19px;
+  color: #000000;
+  gap: 10px;
+}
+.header-nav {
+  display: flex;
+  justify-content: right;
+  gap: 42px;
+  margin: 46px 56px 0 0;
+}
+.header-nav a {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "sidebar header header header header"
+    "sidebar content content content content";
+}
+.sidebar {
+  max-width: 252px;
+  grid-area: sidebar;
+}
+.header {
+  width: auto;
+  grid-area: header;
+  height: 123px;
+}
+.content {
+  margin: 66px 52px 64px 37px;
+  max-width: 1100px;
+  max-height: 783px;
+  align-items: stretch;
+  gap: 20px;
+  grid-area: content;
+  display: grid;
+  grid-template-areas:
+    "img1 img1 img8 img7"
+    "img2 img2 img8 img7"
+    "img6 img5 img3 img3"
+    "img6 img5 img4 img4";
+}
+img {
+  border-radius: 12px;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img5 {
+  grid-area: img5;
+}
+.img6 {
+  grid-area: img6;
+}
+.img7 {
+  grid-area: img7;
+}
+.img8 {
+  grid-area: img8;
+}
